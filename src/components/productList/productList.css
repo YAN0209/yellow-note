@@ -1,0 +1,11 @@
+.product-list {
+    display: flex;
+}
+
+.product-list>.product-column {
+    padding: 5px;
+}
+
+.product-list>.product-column>.product {
+    margin-bottom: 5px;
+}

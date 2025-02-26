@@ -1,0 +1,13 @@
+.topic-list {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+}
+
+.topic-list>.footer {
+    width: 40%;
+    background: unset;
+    color: rgb(175, 175, 175);
+}

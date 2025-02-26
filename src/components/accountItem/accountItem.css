@@ -1,0 +1,65 @@
+.account-item {
+    height: 60px;
+    display: flex;
+    padding: 5px 5px 15px 5px;
+    background-color: #fff;
+}
+
+.account-item>.account-info {
+    flex: 1;
+    display: flex;
+}
+
+.account-item>.account-info>.avatar-info {
+    height: 65px;
+    width: 65px;
+    display: flex;
+    justify-content: center;
+}
+
+.account-item>.account-info>.avatar-info>.avatar {
+    --border-radius: 25px;
+    border: 1px solid rgb(245, 245, 245);
+}
+
+.account-item>.account-info>.account-info-detail {
+    flex: 1;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+}
+
+.account-item>.account-info>.account-info-detail>.username {
+    font-size: 14px;
+}
+
+.account-item>.account-info>.account-info-detail>.fans,
+.account-item>.account-info>.account-info-detail>.accountId {
+    font-size: 13px;
+    color: rgb(149, 149, 149);
+}
+
+.account-item>.follow {
+    display: flex;
+    align-items: center;
+    width: 85px;
+}
+
+.account-item>.follow>span {
+    height: 25px;
+    width: 70px;
+    border-radius: 15px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.account-item>.follow>span.follow {
+    border: 1px solid rgb(255,158,169);
+    color: rgb(255,22,62);
+}
+
+.account-item>.follow>span.following {
+    border: 1px solid rgb(227, 227, 227);
+    color: rgb(150, 150, 150);
+}

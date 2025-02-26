@@ -1,0 +1,112 @@
+.home {
+    width: 100%;
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+}
+
+.home>.header,
+.home>.tabs {
+    flex: 0 0 60px;
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+}
+
+.home>.header>.buttons {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    width: calc(100% - 32px);
+    height: 60px;
+    padding-left: 16px;
+    padding-right: 16px;
+}
+
+.home>.header>.buttons>.menu-button {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100%;
+}
+
+.home>.header>.buttons>.header-tabs {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    height: 100%;
+    width: 50%;
+}
+
+.home>.header>.buttons>.header-tabs span {
+    font-size: large;
+    color: grey;
+    font-weight: normal;
+}
+
+.home>.header>.buttons>.header-tabs span.selected {
+    border-bottom: 2px solid red;
+    color: black;
+    font-weight: bold;
+}
+
+.home>.header>.buttons>.search-button {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100%;
+}
+
+.home>.content {
+    flex: 1;
+    background: #fafafa;
+    width: 100%;
+    overflow-y: auto;
+    overflow-x: hidden;
+    display: flex;
+    justify-content: space-between;
+    width: 100%;
+    -ms-overflow-style: none;
+    scrollbar-width: none;
+}
+
+.home>.content::-webkit-scrollbar {
+    display: none;
+}
+
+.home>.tabs>.buttons {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    width: calc(100% - 32px);
+    height: 60px;
+    padding-left: 16px;
+    padding-right: 16px;
+}
+
+.home>.tabs>.buttons span {
+    font-size: large;
+    color: grey;
+}
+
+.home>.tabs>.buttons span.selected {
+    font-size: large;
+    color: black;
+    /* font-weight: bold; */
+}
+
+.home>.tabs>.buttons span span {
+    font-size: x-large;
+    color: white;
+    /* font-weight: bold; */
+}
+
+.home>.tabs>.buttons .add-post {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 60px;
+    height: 35px;
+    --background-color: red;
+    --border-width: 0px;
+}

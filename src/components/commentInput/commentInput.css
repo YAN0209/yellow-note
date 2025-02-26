@@ -1,0 +1,28 @@
+.popup-comment-input {
+    display: flex;
+    flex-direction: column;
+    padding: 10px;
+    gap: 10px;
+}
+
+.popup-comment-input .comment-text-area {
+    background-color: rgb(234, 234, 234);
+    border-radius: 10px;
+    padding: 10px;
+}
+
+.popup-comment-input .send-button {
+    display: flex;
+    flex-direction: row;
+    justify-content: end;
+    align-items: center;
+}
+
+.popup-comment-input .send-button .send-comment-button {
+    --border-radius: 20px;
+    height: 30px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 14px;
+}

@@ -1,0 +1,11 @@
+.post-list {
+    display: flex;
+}
+
+.post-list>.post-column {
+    padding: 5px;
+}
+
+.post-list>.post-column>.post {
+    margin-bottom: 5px;
+}

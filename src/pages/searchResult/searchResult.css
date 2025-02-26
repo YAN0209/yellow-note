@@ -1,0 +1,200 @@
+.search-result-page {
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+    height: 100%;
+}
+
+.search-result-page>.search-area {
+    width: 100%;
+    /* height: 100px; */
+    display: flex;
+    flex-direction: column;
+    flex: 0 0;
+}
+
+.search-result-page>.search-area>.search-line {
+    display: flex;
+    flex-direction: row;
+    flex: 0 0 60px;
+    align-items: center;
+    padding: 0 10px 0 10px;
+}
+
+.search-result-page>.search-area>.search-line>.search-input {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: center;
+    flex: 1;
+    padding: 0 10px 0 10px;
+    border-radius: 20px;
+    background-color: rgb(245, 245, 245);
+    height: 30px;
+    margin: 0 10px 0 10px;
+    color: rgb(148, 148, 148);
+}
+
+.search-result-page>.search-area>.search-line>.search-input>.input {
+    margin: 0 5px 0 5px;
+}
+
+.search-result-page>.search-area>.search-line>.search-button {
+    font-size: 16px;
+}
+
+.search-result-page>.search-area>.search-type {
+    display: flex;
+    flex-direction: row;
+    flex: 0 0 40px;
+    align-items: center;
+    padding: 0 15px 0 15px;
+}
+
+.search-result-page>.search-area>.search-type>span {
+    font-size: 16px;
+    margin-right: 25px;
+}
+
+.search-result-page>.search-area>.search-type>span>span {
+    color: rgb(153, 153, 153);
+    padding-bottom: 3px;
+}
+
+.search-result-page>.search-area>.search-type>span>span.selected {
+    color: rgb(0, 0, 0);
+    border-bottom: 2px solid red;
+}
+
+.search-result-page>.search-result-area {
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    flex: 1;
+    min-height: 0;
+}
+
+.search-result-page>.search-result-area>.search-result-tag {
+    display: flex;
+    flex-direction: row;
+    flex: 0 0 30px;
+    align-items: center;
+    padding: 0 5px 0 5px;
+    overflow-x: scroll;
+    -ms-overflow-style: none;
+    scrollbar-width: none;
+}
+
+.search-result-page>.search-result-area>.search-result-tag::-webkit-scrollbar,
+.search-result-page>.search-result-area>.content::-webkit-scrollbar {
+    display: none;
+}
+
+.search-result-page>.search-result-area>.search-result-tag>.tag {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 25px;
+    padding: 0 12px 0 12px;
+    margin: 0 5px 0 5px;
+    font-size: 16px;
+    border-radius: 25px;
+    color: rgb(153, 153, 153);
+
+}
+
+.search-result-page>.search-result-area>.search-result-tag>.tag.selected {
+    color: rgb(57, 57, 57);
+    background-color: rgb(245, 245, 245);
+}
+
+.search-result-page>.search-result-area>.content {
+    flex: 1;
+    min-height: 0;
+    overflow-y: auto;
+    overflow-x: hidden;
+    -ms-overflow-style: none;
+    scrollbar-width: none;
+    background: #fafafa;
+    width: 100%;
+}
+
+.search-result-page>.search-result-area .search-filter {
+    display: flex;
+    flex-direction: column;
+    background-color: white;
+    padding: 15px 15px 0 15px;
+}
+
+.search-result-page>.search-result-area .search-filter>.search-filter {
+    display: flex;
+    flex-direction: column;
+}
+
+.search-result-page>.search-result-area .search-filter>.filter>.sort-type,
+.search-result-page>.search-result-area .search-filter>.filter>.note-type,
+.search-result-page>.search-result-area .search-filter>.filter>.create-time,
+.search-result-page>.search-result-area .search-filter>.filter>.search-range,
+.search-result-page>.search-result-area .search-filter>.filter>.address {
+    display: flex;
+    flex-direction: column;
+}
+
+.search-result-page>.search-result-area .search-filter>.filter>.sort-type>.title,
+.search-result-page>.search-result-area .search-filter>.filter>.note-type>.title,
+.search-result-page>.search-result-area .search-filter>.filter>.create-time>.title,
+.search-result-page>.search-result-area .search-filter>.filter>.search-range>.title,
+.search-result-page>.search-result-area .search-filter>.filter>.address>.title {
+    font-size: 15px;
+}
+
+.search-result-page>.search-result-area .search-filter>.filter>.sort-type>.items,
+.search-result-page>.search-result-area .search-filter>.filter>.note-type>.items,
+.search-result-page>.search-result-area .search-filter>.filter>.create-time>.items,
+.search-result-page>.search-result-area .search-filter>.filter>.search-range>.items,
+.search-result-page>.search-result-area .search-filter>.filter>.address>.items {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    padding: 10px 0 10px 0;
+}
+
+.search-result-page>.search-result-area .search-filter>.filter>.sort-type>.items>.item,
+.search-result-page>.search-result-area .search-filter>.filter>.note-type>.items>.item,
+.search-result-page>.search-result-area .search-filter>.filter>.create-time>.items>.item,
+.search-result-page>.search-result-area .search-filter>.filter>.search-range>.items>.item,
+.search-result-page>.search-result-area .search-filter>.filter>.address>.items>.item {
+    height: 40px;
+    width: calc(25% - 10px);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size: 16px;
+    border-radius: 10px;
+    background-color: rgb(245, 245, 245);
+    margin: 5px;
+}
+
+.search-result-page>.search-result-area .search-filter>.filter>.sort-type>.items>.item.selected,
+.search-result-page>.search-result-area .search-filter>.filter>.note-type>.items>.item.selected,
+.search-result-page>.search-result-area .search-filter>.filter>.create-time>.items>.item.selected,
+.search-result-page>.search-result-area .search-filter>.filter>.search-range>.items>.item.selected,
+.search-result-page>.search-result-area .search-filter>.filter>.address>.items>.item.selected {
+    color: rgb(255, 50, 79);
+    background-color: rgb(255, 244, 245);
+}
+
+.search-result-page>.search-result-area .search-filter>.buttons {
+    display: flex;
+    height: 50px;
+    align-items: center;
+    justify-content: center;
+}
+
+.search-result-page>.search-result-area .search-filter>.buttons>span {
+    flex: 1;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 16px;
+}

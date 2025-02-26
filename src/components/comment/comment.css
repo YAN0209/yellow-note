@@ -1,0 +1,175 @@
+.post-comment {
+    /* width: 100%; */
+    padding: 0 10px 0 10px;
+    display: flex;
+    flex-direction: row;
+}
+
+.post-comment .user-avatar {
+    width: 50px;
+    flex-shrink: 0;
+    display: flex;
+    flex-direction: column;
+    justify-content: start;
+    align-items: center;
+}
+
+.post-comment .user-avatar .avatar {
+    --size: 36px;
+    --border-radius: 25px;
+}
+
+.post-comment .comment-content {
+    flex: 1;
+    display: flex;
+    flex-direction: column;
+    justify-content: start;
+    align-items: start;
+    gap: 10px
+}
+
+.post-comment .comment-content .main-comment {
+    width: 100%;
+    min-height: 40px;
+    display: flex;
+    flex-direction: row;
+}
+
+.post-comment .comment-content .main-comment .main-comment-content {
+    flex: 1;
+    display: flex;
+    flex-direction: column;
+}
+
+.post-comment .comment-content .main-comment .main-comment-content .main-comment-username {
+    font-size: 14px;
+    color: rgb(156, 155, 155);
+}
+
+.post-comment .comment-content .main-comment .main-comment-content .main-comment-content {
+    font-size: 14px;
+    display: flex;
+    flex-direction: row;
+    justify-content: start;
+    align-items: center;
+    gap: 5px;
+    width: 100%;
+    word-break: break-all;
+}
+
+.post-comment .comment-content .main-comment .main-comment-content .main-comment-content  {
+    gap: 10px;
+}
+
+.post-comment .comment-content .main-comment .main-comment-content .main-comment-content .comment-extra-info {
+    display: flex;
+    gap: 10px;
+}
+
+.post-comment .comment-content .main-comment .main-comment-content .main-comment-content .comment-extra-info .create-time {
+    color: rgb(156, 155, 155);
+}
+
+.post-comment .comment-content .main-comment .main-comment-content .main-comment-content .comment-extra-info .reply-button {
+    color: gray;
+}
+
+.post-comment .comment-content .main-comment .main-comment-content .tag {
+    background-color: rgb(235, 235, 235);
+    border-radius: 10px;
+    color: gray;
+    width: 38px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 12px;
+    padding: 2px 0 2px 0;
+}
+
+.post-comment .comment-content .main-comment .favorite {
+    width: 20px;
+    flex-shrink: 0;
+    display: flex;
+    flex-direction: column;
+    justify-content: start;
+    align-items: center;
+}
+
+.post-comment .comment-content .sub-comment {
+    width: 100%;
+    display: flex;
+    flex-direction: row;
+}
+
+.post-comment .comment-content .sub-comment .user-avatar .avatar {
+    --size: 28px;
+    --border-radius: 25px;
+}
+
+/* ====== */
+
+.post-comment .comment-content .sub-comment .sub-comment-content {
+    flex: 1;
+    display: flex;
+    flex-direction: column;
+}
+
+.post-comment .comment-content .sub-comment .sub-comment-content .username {
+    font-size: 14px;
+    color: rgb(156, 155, 155);
+}
+
+.post-comment .comment-content .sub-comment .sub-comment-content .content {
+    font-size: 14px;
+    display: flex;
+    flex-direction: column;
+    justify-content: start;
+    align-items: start;
+    gap: 5px;
+    width: 100%;
+    word-break: break-all;
+}
+
+.post-comment .comment-content .sub-comment .sub-comment-content .content .content-info .reply-to-username {
+    font-size: 14px;
+    color: rgb(156, 155, 155);
+}
+
+.post-comment .comment-content .sub-comment .sub-comment-content .content .content-extra-info {
+    display: flex;
+    justify-content: start;
+    align-items: center;
+    gap: 10px;
+}
+
+.post-comment .comment-content .sub-comment .sub-comment-content .content .content-extra-info .create-time {
+    color: rgb(156, 155, 155);
+}
+
+.post-comment .comment-content .sub-comment .sub-comment-content .content .content-extra-info .reply-button {
+    color: gray;
+}
+
+.post-comment .comment-content .sub-comment .favorite {
+    width: 20px;
+    flex-shrink: 0;
+    display: flex;
+    flex-direction: column;
+    justify-content: start;
+    align-items: center;
+}
+
+.post-comment .comment-content .show-more-comment {
+    display: flex;
+    flex-direction: row;
+    justify-content: start;
+    align-items: center;
+}
+
+.post-comment .comment-content .show-more-comment .divider {
+    width: 28px;
+}
+
+.post-comment .comment-content .show-more-comment .show-more-button {
+    color: rgb(37, 48, 69);
+}
