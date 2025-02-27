@@ -7,7 +7,6 @@ import './searchResult.css'
 import { posts as mockPosts, searchResultTag as mockTag, accounts as mockAccounts, topics as mockTopics, products as mockProducts } from '../../data';
 import AccountItem from '../../components/accountItem/accountItem';
 import TopicList from '../../components/topicList/topicList';
-import Masonry from 'react-masonry-css';
 import Product from '../../components/product/product';
 import ProductList from '../../components/productList/productList';
 

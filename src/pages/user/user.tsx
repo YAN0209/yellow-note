@@ -102,7 +102,7 @@ const User: FC = () => {
             <div className='user-info'>
                 <div className='main-info'>
                     <div className='avatar'>
-                        <Avatar src={userInfo.userAvatar} style={{ '--border-radius': '25px', '--size': '80px' }} />
+                        <Avatar src={userInfo.userAvatar} style={{ '--border-radius': '25px', '--size': '70px' }} />
                     </div>
                     <div className='username-id'>
                         <span className='username'>
